@@ -163,6 +163,10 @@ def DynamicTypeChecker : Checker<"DynamicTypeChecker">,
   HelpText<"Check for cases where the dynamic and the static type of an object are unrelated.">,
   DescFile<"DynamicTypeChecker.cpp">;
 
+def VariadicChecker : Checker<"VariadicChecker">,
+  HelpText<"Check variadic functions.">,
+  DescFile<"VariadicChecker.cpp">;
+
 } // end "alpha.core"
 
 let ParentPackage = Nullability in {
